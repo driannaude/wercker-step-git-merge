@@ -1,0 +1,2 @@
+wercker-step-git-merge
+======================
