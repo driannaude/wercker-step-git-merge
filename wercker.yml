@@ -1,2 +1,5 @@
 box:  wercker/default
-step: wercker/validate-wercker-step
+
+build:
+  steps:
+    - wercker/validate-wercker-step
