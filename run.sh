@@ -15,5 +15,5 @@ git checkout -b "$WERCKER_GIT_MERGE_TARGET" "origin/$WERCKER_GIT_MERGE_TARGET" |
 
 git merge --no-ff "$WERCKER_GIT_MERGE_SOURCE" || fail "could not merge $WERCKER_GIT_MERGE_SOURCE into $WERCKER_GIT_MERGE_TARGET"
 
-gir push origin "$WERCKER_GIT_MERGE_TARGET" || fail "could not push $WERCKER_GIT_MERGE_TARGET"
+git push origin "$WERCKER_GIT_MERGE_TARGET" || fail "could not push $WERCKER_GIT_MERGE_TARGET"
 
