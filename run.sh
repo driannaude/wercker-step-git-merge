@@ -11,7 +11,7 @@ cd "$WERCKER_ROOT" || fail "could not change directory to source_dir \"$WERCKER_
 
 git remote update origin || fail "could not fetch branches from the remote"
 
-git checkout "$WERCKER_GIT_MERGE_TARGET" "origin/$WERCKER_GIT_MERGE_TARGET" || git checkout -b "$WERCKER_GIT_MERGE_TARGET" "origin/$WERCKER_GIT_MERGE_TARGET" || fail "could not checkout $WERCKER_GIT_MERGE_TARGET"
+git checkout -B "origin/$WERCKER_GIT_MERGE_TARGET" || fail "could not checkout $WERCKER_GIT_MERGE_TARGET"
 
 git merge --no-ff "$WERCKER_GIT_MERGE_SOURCE" || fail "could not merge $WERCKER_GIT_MERGE_SOURCE into $WERCKER_GIT_MERGE_TARGET"
 
