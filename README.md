@@ -4,15 +4,15 @@ A [wercker](http://wercker.com/) step to merge two git branches.
 
 ## Options
 
-- `source` The branch to merge.
-- `target` The branch which will get the merged content.
+- `source` The branch to merge (i.e. dev).
+- `target` The branch [source] will be merged into (i.e. master).
 
 ## Example
 
 ```yaml
 deploy:
   steps:
-    - simonmenke/git-merge:
-        source: devel
+    - truescape/git-merge:
+        source: dev
         target: master
 ```
