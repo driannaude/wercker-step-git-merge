@@ -17,4 +17,6 @@ deploy:
     - truescape/git-merge:
         source: dev
         target: master
+        name: Wercker GitBot
+        email: gitbot@example.com
 ```
