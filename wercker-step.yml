@@ -1,5 +1,5 @@
 name: git-merge
-version: 0.0.3
+version: 0.1.0
 description: Merge two branch.
 properties:
   source:
@@ -8,4 +8,3 @@ properties:
   target:
     type: string
     required: true
-
